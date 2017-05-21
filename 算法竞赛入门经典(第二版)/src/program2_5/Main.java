@@ -14,12 +14,13 @@ import java.util.Scanner;
 public class Main {
 
 	static Scanner input = new Scanner(System.in);
+
 	public static void main(String[] args) {
 		int n = input.nextInt();
 		long t = n; // 多次3n + 1转换,可能使n溢出int, 故先提升为long
 		int count = 0;
-		while ( t != 1) {
-			if ( t % 2 == 0) {
+		while (t != 1) {
+			if (t % 2 == 0) {
 				t /= 2;
 			} else {
 				t = t * 3 + 1;
