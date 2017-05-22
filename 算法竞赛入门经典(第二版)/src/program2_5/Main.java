@@ -3,7 +3,7 @@ package program2_5;
 import java.util.Scanner;
 
 /* P24 3n + 1 
- * 给出n ( n <= 10^9),求出转换的次数count
+ * 缁欏嚭n ( n <= 10^9),姹傚嚭杞崲鐨勬鏁癱ount
  * sample input:
  * 987654321
  * sample output:
@@ -16,7 +16,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		int n = input.nextInt();
-		long t = n; // 多次3n + 1转换,可使n溢出int, 故先提升为long
+		long t = n; // 澶氭3n + 1杞崲,鍙娇n婧㈠嚭int, 鏁呭厛鎻愬崌涓簂ong
 		int count = 0;
 		while (t != 1) {
 			if (t % 2 == 0) {
